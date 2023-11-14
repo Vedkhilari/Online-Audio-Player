@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Termux Audio Player</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Termux Audio Player</h1>
+    
+
+    <div id="controls">
+        <button onclick="previous()">Previous</button>
+        <button onclick="togglePlayPause()">Play/Pause</button>
+        <button onclick="next()">Next</button>
+        <button onclick="toggleShuffle()">Toggle Shuffle</button>
+    </div>
+
+    <div id="shuffleMode">Shuffle Mode: Off</div>
+
+<div id="currentSong">Now Playing: None</div>
+    <audio id="audioPlayer" controls></audio>
+
+    <script src="{{ url_for('static', filename='app.js') }}">
+
+
+
+
+    </script>
+</body>
+</html>
